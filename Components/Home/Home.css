@@ -1,0 +1,14 @@
+.home-img img{
+    height: 1072px;
+}
+.home-content{
+    margin-top: -800px;
+    margin-left: 60px;
+}
+.home-content h4{
+   color:#3652A5
+}
+.home-content h1{
+    /* font-size: 18px; */
+    font-weight: bolder;
+}
