@@ -23,7 +23,7 @@ const Navbar = () => {
       </ul>
       </div>
       <div className="contact">
-        <button className='number'><Icon className='call-icon' icon="mdi-phone" />9846690222</button>
+        <button className='number'><Icon className='call-icon' icon="mdi-download" /><a href="/proposal.pdf" download></a>Download Proposal</button>
       </div>
     </div>
   )

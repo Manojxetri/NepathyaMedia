@@ -29,7 +29,7 @@
   display: flex;
   justify-content: space-around;
   gap: 40px;
-  margin-left: -250px;
+  margin-left: -150px;
 }
 .navmenu ul li {
   list-style: none;
@@ -44,7 +44,7 @@
 .contact button{
   display: flex;
   height: 55px;
-  width: 191px;
+  width: 250px;
   padding: 16px;
   /* margin-left: 20px; */
   border-radius: 50px;

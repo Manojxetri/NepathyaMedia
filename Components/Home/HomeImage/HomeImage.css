@@ -1,0 +1,10 @@
+.images img{
+    height: 305px;
+    width: 383px;
+    box-shadow: 8px 9px 6px 3px #3653A3;
+
+}
+.images{
+    margin-top: 110px;
+    margin-left: 10px;
+}
