@@ -1,10 +1,11 @@
 .images img{
     height: 305px;
     width: 383px;
-    box-shadow: 8px 9px 6px 3px #3653A3;
+    border-radius: 16px;
+    box-shadow: 4px 6px 0px 3px #685abb;
 
 }
 .images{
     margin-top: 110px;
-    margin-left: 10px;
+    margin-left: 15px;
 }

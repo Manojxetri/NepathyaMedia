@@ -12,8 +12,8 @@ const Home = () => {
         <h4>A Creative Team That Bring Stories To Life</h4>
 
         <div className="mid-content">
-        <h1>Capturing Memories,</h1>
-        <h1>Creating Stories .   .</h1>
+        <h1>Capturing <span>Memories</span>,</h1>
+        <h1>Creating <span>Stories...</span></h1>
         </div>
         <div className="home-para">
         <p className="para1">

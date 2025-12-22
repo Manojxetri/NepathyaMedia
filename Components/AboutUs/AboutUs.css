@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+#color{
+    color: #3652A4;
+}
+
+.background{
+    background-color: #E5EDEE;
+    padding: 20px;
+    margin-top: -190px;
+}
+
+.text{
+    margin-left: 540px;
+    margin-top: 54px;
+    height: 339px;
+    height: 54px;
+    font-family: 'ABeeZee';
+    font-size: 32px;
+}
+
+.line{
+    border: 2px solid #3652A4;
+    height: 4px;
+    width: 300px;
+    margin-left: 560px;
+}
+
+.image{
+    height: 642px;
+    margin-top: 60px;
+    /* margin-left: px; */
+}
+
+.aboutus-description-container{
+    /* border: 1px solid black; */
+    display: flex;
+}
+.image{
+    width: 50%;
+}
+
+
+ .card1{
+    margin-top: 43.5px;
+    /* margin-left:8px; */
+    /* color: yellow; */
+}
+ .card2{
+    margin-top: 43.5px;
+    margin-left: 30px;
+}
+.card3{
+    margin-top: 73px;
+    /* margin-left: px; */
+}
+.card4{
+    margin-top: 72.5px;
+    margin-left: -120px;
+}

@@ -9,7 +9,7 @@
    color:#3652A5;
    font-size: 25px;
    font-weight: light;
-   margin-left: 20px;
+   margin-left: 10px;
 }
 
 .home-content .mid-content{
@@ -20,6 +20,7 @@
     font-weight: bolder;
     font-size: 90px;
     /* margin-top: 15px; */
+    color: black;
 }
 .home-content .home-para{
     margin-top: 12px;

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+.feedback{
+    margin-top: 73px;
+    margin-left: 120px;
+}
+.feedback-left{
+    height: 100px;
+    width: 642px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-family: "ABeeZee", sans-serif;
+    
+}
+.feedback-left h1{
+    color: #3653A1;
+}
+.feedback-left span{
+    color: #F2A53B;
+}
+.feedback-line{
+    border: 1.5px solid #F2A53B;
+    width: 178px;
+    margin-top: 1px;
+}
+.feedback-text{
+    width: 419px;
+    height: 84px;
+    color: #838B95;
+    margin-top: 32px;
+}
+.feedback-slider{
+    /* display: flex; */
+    width: 95%;
+    height: 100%;
+    margin-top: 10px;
+
+}
+.feedback-slide{
+    display: flex !important;
+    justify-content: center;
+}
+.feedback-card{
+    height: 268px;
+    width: 560px;
+    /* border: 1px solid black; */
+    margin-left: 650px;
+    /* margin-top: -135px; */
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 5px -3px 1px 5px  #3653A1;
+    border-radius: 20px;
+}
+.feedback-card img{
+    margin-top: 28px;
+}
+.feedback-card h3{
+    font-family: "ABeeZee", sans-serif;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 100;
+    margin-top: -170px;
+    margin-left: 200px;
+}
+.feedback-card .role{
+    margin-left: 192px;
+    margin-top: 4px;
+    color: #838B95;
+}
+.feedback-card .stars{
+    margin-left: 199px;
+    margin-top: 4px;
+    height: 24px;
+    width: 24px;
+    color: #FF9800;
+}
+.feedback-card .msg{
+    margin-top: 12px;
+    margin-left: 199px;
+    color: #838B95;
+    height: 86px;
+    width: 350px;
+    text-align: justify;
+}
+.feedback-card .quotation{
+    margin-top: -220px;
+    margin-left: 455px;
+} 
+
+.arrow{
+    position: absolute;
+    /* border: 1px solid black; */
+    height: 56px;
+    width: 56px;
+    display: flex;
+    margin-top: 100px;
+    cursor: pointer;
+    z-index: 10;
+    /* border-radius: 16px; */
+}
+.left-arrow{
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 56px;
+    width: 56px;
+    top: 28%;
+}
+.right-arrow{
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 56px;
+    width: 56px;
+    bottom: 16%;
+    /* left: 6%; */
+    margin-left: 70px;
+}
+.icon{
+    margin: auto;
+    height: 24px;
+    width: 24px;
+}
+.arrow:hover{
+    /* color: #FF9800; */
+    background-color: #F2A53B;
+    color: white;
+    border: none;
+}
+
+
+

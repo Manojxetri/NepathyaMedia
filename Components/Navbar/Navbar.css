@@ -3,13 +3,20 @@
   justify-content: space-around;
   align-items: center;
   height: 100px;
+  background-color: white;
   /* width: 1440vh; */
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(254, 252, 252);
   /* background-color: black ;
     color: white; */
-  box-shadow: 1px 1px 10px 1px blue;
+  box-shadow: 1px 1px 10px 1px rgb(243, 243, 247);
+  position: sticky;
+  top: 0;
+  /* z-index: 100; */
+  /* overflow: visible; */
+    z-index: 1000;
 
 }
+
 
 /* logo section */
 .logo {
@@ -25,6 +32,18 @@
 }
 
 /* navmenu section */
+
+
+.navmenu li a{
+  /* font-style: none; */
+  text-decoration: none;
+  color: black;
+}
+.navmenu li a.active{
+  color: #3653A3;
+  border-bottom: 2px solid #3653A3;
+}
+
 .navmenu ul {
   display: flex;
   justify-content: space-around;
@@ -37,11 +56,15 @@
   font-weight: bolder;
   line-height: 16px;
   cursor: pointer;
+  color: black;
   /* margin-left: -20px; */
+}
+.contact{
+    transition: transform 0.25s ease, color 0.25s ease;   
 }
 
 /* phone number button */
-.contact button{
+.contact .proposal{
   display: flex;
   height: 55px;
   width: 250px;
@@ -56,9 +79,16 @@
   cursor: pointer;
   box-shadow: 1px 1px 11px 1px #3653A3;
 }
-.contact .call-icon{
+.contact a{
+  text-decoration: none;
+}
+.proposal .call-icon{
   height: 22px;
   width: 22px;
   margin-left: 20px;
   
+}
+
+.contact:hover{
+  transform: translateY(-10%) scale(1);
 }
