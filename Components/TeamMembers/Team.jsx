@@ -30,22 +30,24 @@ const Team = () => {
     arrows: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-        },
-      },
-    ],
+responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      centerMode: false,
+      dots: false,
+    },
+  },
+  {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 1,
+      arrows: false,
+      dots: true,   // ✅ SHOW DOTS ON MOBILE
+    },
+  },
+],
   };
 
   return (
@@ -55,9 +57,9 @@ const Team = () => {
         <div className="team-line"></div>
         <div className="TeamMembers">
         <h1>Our Team Members</h1>
-        </div>
         <div className="members">
             <h1>Our Team Members</h1>
+        </div>
         </div>
       </div>
 

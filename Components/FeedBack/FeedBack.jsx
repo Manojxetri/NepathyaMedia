@@ -24,25 +24,29 @@ const FeedBack = () => {
     centerPadding: "0px",
     slidesToShow: 1,
     infinite: true,
-    speed: 10,
+    speed: 400,
     dots: false,
     arrows: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          centerMode: false,
-        },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow:1,
+        arrows: true,
+        dots: false,
       },
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-        },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow:1,
+        arrows: false, 
+        dots: true,   
       },
-    ],
+    },
+  ],
   };
 
   return (

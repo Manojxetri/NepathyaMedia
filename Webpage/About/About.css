@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+
+.about-heading{
+    margin-left: 594px;
+    margin-top: -440px;
+}
+.about-heading h1{
+    color: #3653A3;
+    font-family: "ABeeZee", sans-serif;
+
+}
+.about-heading span{
+    color: #FF9F10;
+}
+.about-para{
+    height: 344px;
+    width: 733px;
+    margin-left: 594px;
+    margin-top: 29px;
+}
+.about-line{
+    margin-top: 3px;
+    border: 2px solid #3653A3;
+    width: 150px;
+}
+.about-para{
+    text-align: justify;
+    line-height: 24px;
+    font-family: sans-serif;
+}
+.about-future{
+    margin-top: 100px;
+}
+.about-footer{
+    margin-top: 180px;
+}

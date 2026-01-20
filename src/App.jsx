@@ -15,6 +15,8 @@ import Podcast from "../Webpage/Podcast/Podcast";
 import Design from "../Webpage/Design/Design";
 import About from "../Webpage/About/About";
 import Future from "../Components/Future/Future";
+import Footer from "../Components/Footer/Footer";
+import Video from "../Components/Video/Video";
 
 const App = () => {
   return (
@@ -34,6 +36,8 @@ const App = () => {
                 <Team />
                 <FeedBack />
                 <Future/>
+                <Video/>
+                <Footer/>
               </>
             }
           />

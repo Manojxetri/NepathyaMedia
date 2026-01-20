@@ -9,3 +9,46 @@
     margin-top: 110px;
     margin-left: 15px;
 }
+
+
+
+@media (max-width: 1024px) {
+  .images img {
+    width: 480px;
+    height: 430px;
+     display: flex;
+    justify-content: space-around;
+    gap: 120px;
+  }
+
+  .images {
+    margin-top: -220px;
+    margin-left: 100px;
+   
+    /* margin-right: -200px; */
+  }
+}
+
+@media (max-width: 768px) {
+  .images img {
+    width: 140px;
+    height: 100px;
+  }
+
+  .images {
+    /* margin-top: 40px; */
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .images img {
+    width: 110px;
+    height: 90px;
+  }
+
+  .images {
+    margin-top: -380px;
+    margin-left: -29px;
+  }
+}

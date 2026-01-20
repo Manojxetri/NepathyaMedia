@@ -22,7 +22,7 @@ const Home = () => {
          <p className="para2"> from film and photography to design and digital media.</p>
         </div>
       </div>
-      <div className="image">
+      <div className="home-image">
         <HomeImage src="../public/images/HomeImage/laptop.jpeg"  alt="image 1" />
         <HomeImage src="../public/images/HomeImage/setup.jpeg"  alt="image 1" />
         <HomeImage src="../public/images/HomeImage/pc.jpeg"  alt="image 1" />

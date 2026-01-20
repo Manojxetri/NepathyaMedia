@@ -31,3 +31,18 @@
     /* transform: scale(1); */
       transform: translateY(-10%) scale(1.1);
 }
+
+
+/* =======================
+   TABLET
+======================= */
+@media (max-width: 1024px) {
+  .card-container {
+    width: 70vw;
+  }
+
+  .card1 {
+    margin-left: 0;
+  }
+}
+

@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const EventHighlights = () => {
   const settings = {
+    button:false,
     dots: true,
     infinite: true,
     speed: 500,

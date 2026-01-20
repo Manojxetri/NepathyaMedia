@@ -1,0 +1,29 @@
+.container{
+   background-color: #EEEEEE;
+   margin-top: 34px;
+   border-radius: 22px;
+}
+
+.podcast-title {
+  color: #3653A3;
+  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+}
+
+.podcast-text {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.ratio{
+    margin-top: -80px;
+  
+}
+
+iframe {
+  border-radius: 12px;
+  box-shadow: 1px 3px 3px 1px black;
+}
+.podcast-footer{
+    margin-top: 111px;
+}
+

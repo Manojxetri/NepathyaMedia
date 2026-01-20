@@ -1,30 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Icon } from "@iconify/react";
-import { Link } from 'react-router-dom'
 import { NavLink } from "react-router-dom";
 
-
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="navbar">
+    
       <div className="logo">
         <img
-          src="..\public\images\Nepathya Media Team logo.png"
+          src="../public/images/Nepathya Media Team logo.png"
           alt="Media Logo"
         />
       </div>
-      <div className="navmenu">
-  <ul>
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/gallery">Gallery</NavLink></li>
-    <li><NavLink to="/about">About Us</NavLink></li>
-    <li><NavLink to="/podcast">Podcast</NavLink></li>
-    <li><NavLink to="/design">Design</NavLink></li>
-    <li><NavLink to="/contact">Contact Us</NavLink></li>
-  </ul>
-</div>
-      <div className="contact">
+
+      
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <Icon icon={menuOpen ? "mdi:close" : "mdi:menu"} />
+      </div>
+
+      
+      <div className={`navmenu ${menuOpen ? "active" : ""}`}>
+        <ul>
+          <li><NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink></li>
+          <li><NavLink to="/about" onClick={() => setMenuOpen(false)}>About Us</NavLink></li>
+          <li><NavLink to="/gallery" onClick={() => setMenuOpen(false)}>Gallery</NavLink></li>
+          <li><NavLink to="/podcast" onClick={() => setMenuOpen(false)}>Podcast</NavLink></li>
+          <li><NavLink to="/design" onClick={() => setMenuOpen(false)}>Design</NavLink></li>
+          <li><NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</NavLink></li>
+        </ul>
+      </div>
+
+      
+      <div className="contact desktop-only">
         <a href="/proposal.pdf" download className="proposal">
           <Icon className="call-icon" icon="mdi-download" />
           Download Proposal
