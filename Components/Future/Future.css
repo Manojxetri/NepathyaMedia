@@ -24,6 +24,17 @@
 .future-images img{
     margin-top: 400px;
 }
+.future-images .img1{
+    height: 400px;
+    width: 400px;
+    /* margin-left: 10px; */
+}
+
+.future-images .img2{
+    height: 400px;
+    width: 400px;
+    margin-left: -100px;
+}
 .future-heading h1{
     color: #3653A3;
     font-family: "ABeeZee", sans-serif;
@@ -41,15 +52,15 @@
 .future-heading{
     height: 120px;
     width: 608px;
-    margin-left: 445px;
-    margin-top: -500px;
+    margin-left: 425px;
+    margin-top: -450px;
     font-size: 21px;
     text-align: center;
 }
 .future-para{
     height: 150px;
     width: 560px;
-    margin-left: 465px;
+    margin-left: 435px;
     font-size: 17px;
     font-family: sans-serif;
     line-height: 22px;
@@ -57,7 +68,7 @@
     text-align: justify;
 }
 .future-btn{
-    margin-left: 625px;
+    margin-left: 605px;
 }
 .future-btn button{
     height: 60px;

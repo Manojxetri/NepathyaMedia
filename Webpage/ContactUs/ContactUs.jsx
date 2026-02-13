@@ -36,10 +36,10 @@ const ContactUs = () => {
           <div className="contact-right">
             <div className="info">
             <h1>Connect With Us</h1>
-           <p> <Icon className="location" icon="mdi:location" /> Tilottama-5, Manigram </p>
-           <p>  <Icon className="call" icon="material-symbols:call" />  9802656092, 9846690222 </p>
-            <p> <Icon className="mail" icon="material-symbols:mail" />  nepathyamediateam@gmail.com</p>
-           <p>  <Icon className="time" icon="mingcute:time-fill" />  Sun-Fri: 7:00 AM - 5:00 PM</p>
+           <p> <Icon className="icon location" icon="mdi:location" /> Tilottama-5, Manigram </p>
+           <p>  <Icon className="icon call" icon="material-symbols:call" />  9802656092, 9846690222  </p>
+            <p> <Icon className="icon mail" icon="material-symbols:mail" /> nepathyamediateam@gmail.com </p>
+           <p>  <Icon className="icon time" icon="mingcute:time-fill" /> Sun-Fri: 7:00 AM - 5:00 PM </p>
             </div>
             <div className="map">
               <iframe

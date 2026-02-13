@@ -8,8 +8,8 @@ const Future = () => {
           <h1 className="media-watermark">MEDIA TEAM</h1>
         </div>
       <div className="future-images">
-        <img src="../public/images/left.png" className="img1" alt="" />
-        <img src="../public/images/right.png" className="img2" alt="" />
+        <img src="../public/images/drone.png" className="img1" alt="" />
+        <img src="../public/images/camera.png" className="img2" alt="" />
       </div>
 
       <div className="future-heading">
