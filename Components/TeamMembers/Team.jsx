@@ -88,19 +88,19 @@ const Teamdata = [
     name: "Manoj Khanal",
     role: "Frontend Developer & Shorts Video",
     img: "/TeamPhotos/manoj.jpeg",
-    msg: "I am Manoj Khanal, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I create engaging web experiences, edit dynamic short videos",
+    msg: "I am Manoj Khanal, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I specialize in creating engaging and user-friendly web experiences, along with editing dynamic and visually compelling short videos that effectively communicate ideas and capture audience attention.",
   },
   {
     name: "Bardan Karki",
     role: "Frontend Dev, Shorts Video Editor & Photographer",
     img: "/TeamPhotos/bardan.jpeg",
-    msg: "I am Bardan Karki, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I create engaging web experiences, edit dynamic short videos, and capture visuals that bring stories to life.",
+    msg: "I am Bardan Karki, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I specialize in creating engaging and user-friendly web experiences, editing dynamic short videos, and capturing impactful visuals that bring stories to life and connect with audiences.",
   },
   {
     name: "Rosis Sharma",
     role: "Videography, Video Editor & Frontend Dev",
     img: "/TeamPhotos/rosis.jpeg",
-    msg: "I specialize in creating visually compelling content through professional video editing and creative videography. My work focuses on transforming ideas into engaging visuals that communicate clearly and leave a lasting impact..",
+    msg:"I am Rosis Sharma, a creative professional specializing in video editing and videography. I focus on producing visually compelling content that transforms ideas into engaging visuals, communicates clearly, and leaves a lasting impact on audiences.",
   },
   {
     name: "Dinesh Tandan",

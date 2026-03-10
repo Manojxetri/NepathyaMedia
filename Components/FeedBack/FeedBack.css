@@ -128,6 +128,95 @@
 }
 
 
+/* Mobile and tablet responsiveness */
+@media screen and (max-width: 1024px) {
+    .feedback {
+        margin-left: 50px; /* reduce side margin */
+        margin-top: 50px;
+    }
+
+    .feedback-left {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .feedback-line {
+        width: 120px; /* smaller line */
+    }
+
+    .feedback-text {
+        width: 90%;
+    }
+
+    .feedback-card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+
+    .feedback-card h3,
+    .feedback-card .role,
+    .feedback-card .stars,
+    .feedback-card .msg,
+    .feedback-card .quotation {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .feedback-card .msg {
+        width: 80%;
+    }
+
+    .arrow {
+        margin-top: 20px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .left-arrow, .right-arrow {
+        top: auto;
+        bottom: 0;
+        margin: 10px;
+        position: relative;
+    }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 600px) {
+    .feedback {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .feedback-left {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .feedback-card {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+        box-shadow: 3px 3px 5px rgba(54, 83, 161, 0.3);
+    }
+
+    .feedback-card h3,
+    .feedback-card .role,
+    .feedback-card .stars,
+    .feedback-card .msg,
+    .feedback-card .quotation {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .feedback-card .msg {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+
 
 
 

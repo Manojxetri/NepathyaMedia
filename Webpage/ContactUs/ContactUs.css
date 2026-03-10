@@ -195,10 +195,12 @@ textarea{
 
   .contact-right {
     width: 100%;
+    margin-left: 40px;
   }
 
   .contact-right .info {
     width: 100%;
+
   }
 
   .contact-right .info h1 {
@@ -208,7 +210,7 @@ textarea{
 
   .contact-right .info p {
     padding-left: 20px;
-    margin-left: 0;
+    margin-left: 0px;
     font-size: 14px;
   }
 

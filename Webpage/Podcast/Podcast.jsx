@@ -46,7 +46,7 @@ const Podcast = () => {
           {/* Videos using map */}
           <div className="row  justify-content-center">
             {podcastVideos.map((video) => (
-              <div className="col-md-4" key={video.id}>
+              <div className="col-md-4 " key={video.id}>
                 <div className="ratio ratio-4x3">
                   <iframe
                     src={video.src}

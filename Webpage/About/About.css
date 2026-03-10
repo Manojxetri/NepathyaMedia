@@ -1,36 +1,153 @@
+/* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 
-.about-heading{
+/* About Image */
+
+/* About Heading */
+.about-heading {
     margin-left: 594px;
     margin-top: -440px;
 }
-.about-heading h1{
+
+.about-heading h1 {
     color: #3653A3;
     font-family: "ABeeZee", sans-serif;
-
 }
-.about-heading span{
+
+.about-heading span {
     color: #FF9F10;
 }
-.about-para{
-    height: 344px;
-    width: 733px;
-    margin-left: 594px;
-    margin-top: 29px;
-}
-.about-line{
+
+.about-line {
     margin-top: 3px;
     border: 2px solid #3653A3;
     width: 150px;
 }
-.about-para{
+
+/* About Paragraph */
+.about-para {
+    height: 344px;
+    width: 733px;
+    margin-left: 594px;
+    margin-top: 29px;
     text-align: justify;
     line-height: 24px;
     font-family: sans-serif;
 }
-.about-future{
+
+/* About Future Section */
+.about-future {
     margin-top: 100px;
 }
-.about-footer{
+
+/* About Footer */
+.about-footer {
     margin-top: 180px;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablet / Medium screens */
+@media screen and (max-width: 1024px) {
+    /* Center image */
+    .about-image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    /* Heading and paragraph */
+    .about-heading,
+    .about-para {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .about-heading {
+        margin-top: 20px;
+    }
+
+    .about-heading h1 {
+        font-size: 28px;
+    }
+
+    .about-line {
+        margin: 10px auto 0 auto;
+    }
+
+    .about-para {
+        height: auto;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .about-future {
+        margin-top: 80px;
+    }
+
+    .about-footer {
+        margin-top: 120px;
+    }
+}
+
+/* Mobile / Small screens */
+@media screen and (max-width: 600px) {
+    .about-image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .about-heading,
+    .about-para {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .about-heading {
+        margin-top: 15px;
+    }
+
+    .about-heading h1 {
+        font-size: 24px;
+    }
+
+    .about-line {
+        width: 100px;
+        margin: 10px auto 0 auto;
+    }
+
+    .about-para {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .about-future {
+        margin-top: 60px;
+    }
+
+    .about-footer {
+        margin-top: 80px;
+    }
 }
