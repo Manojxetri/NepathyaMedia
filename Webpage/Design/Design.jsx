@@ -28,10 +28,7 @@ const Design = () => {
 
         <div className="col-lg-12 text-center design-text">
               <p className="podcast-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laboriosam, dolorem, deserunt quibusdam voluptates quas optio,
-                repellat hic eaque sed eveniet molestias veritatis! Tempore
-                accusamus quasi sequi delectus recusandae a porro.
+                Our design work reflects creativity, innovation, and visual storytelling. The Nepathya Media Team creates engaging designs that communicate ideas clearly and make every project visually impactful.
               </p>
             </div>
       

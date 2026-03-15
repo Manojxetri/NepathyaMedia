@@ -4,9 +4,9 @@ import "./Future.css";
 const Future = () => {
   return (
     <div className="future">
-        <div className="watermark">
-          <h1 className="media-watermark">MEDIA TEAM</h1>
-        </div>
+      <div className="watermark">
+        <h1 className="media-watermark">MEDIA TEAM</h1>
+      </div>
       <div className="future-images">
         <img src="../public/images/drone.png" className="img1" alt="" />
         <img src="../public/images/camera.png" className="img2" alt="" />
@@ -18,15 +18,14 @@ const Future = () => {
         </h1>
       </div>
       <div className="future-para">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur.
+        At Nepathya Media Team, we believe in growing together through
+        creativity, collaboration, and innovation. By sharing ideas and
+        supporting one another, we aim to build a stronger community and create
+        meaningful content that inspires a better future for everyone.
       </div>
-      <div className="future-btn">
+      {/* <div className="future-btn">
         <button>Show More</button>
-      </div>
+      </div> */}
     </div>
   );
 };

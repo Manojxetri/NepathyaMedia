@@ -50,8 +50,7 @@ const Footer = () => {
           <div className="footer-col">
             <h3>Get the latest information</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Let’s connect and create something amazing together. Reach out to the Nepathya Media Team anytime. ✨
             </p>
 
             <div className="newsletter">

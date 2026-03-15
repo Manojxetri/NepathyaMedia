@@ -1,29 +1,127 @@
-.container{
-   background-color: #EEEEEE;
-   margin-top: 34px;
-   border-radius: 22px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.container {
+  background-color: #EEEEEE;
+  margin-top: 44px;
+  border-radius: 22px;
+  /* padding: 2rem;                */
+  max-width: 1400px;            
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .podcast-title {
   color: #3653A3;
   font-family: "Poppins", sans-serif;
   font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .podcast-text {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-}
-.ratio{
-    margin-top: -80px;
-  
+  line-height: 1.6;
+  color: #444;
 }
 
 iframe {
   border-radius: 12px;
-  box-shadow: 1px 3px 3px 1px black;
-}
-.podcast-footer{
-    margin-top: 111px;
+  box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.25);
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
+.ratio {
+  margin-top: -50px !important;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.podcast-footer {
+  margin-top: 60px;            
+}
+
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 3rem 4rem;
+  }
+
+  .podcast-title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding: 2rem;
+    margin-top: 20px;
+    border-radius: 16px;
+  }
+
+  .podcast-title {
+    font-size: 38px;
+  }
+
+  .podcast-text {
+    font-size: 15px;
+  }
+
+  .podcast-footer {
+    margin-top: 50px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1.5rem;
+    margin-top: 16px;
+    border-radius: 16px;
+  }
+
+  .podcast-title {
+    font-size: 32px;
+  }
+
+  .podcast-text {
+    font-size: 14px;
+  }
+
+  /* Make videos take full width on mobile */
+  .row.justify-content-center > .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .ratio.ratio-4x3 {
+    aspect-ratio: 16 / 9;     /* better mobile proportion than 4:3 */
+    height: auto;
+  }
+
+  .podcast-footer {
+    margin-top: 40px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 576px) {
+  .podcast-title {
+    font-size: 28px;
+  }
+
+  .podcast-text {
+    font-size: 13.5px;
+  }
+
+  .container {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+}

@@ -7,22 +7,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const EventHighlights = () => {
   const settings = {
-    button:false,
+    button: false,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
-  {
-    breakpoint: 1024,
-    settings: { slidesToShow: 2 }
-  },
-  {
-    breakpoint: 768,
-    settings: { slidesToShow: 1 }
-  }
-]
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
   };
   return (
     <div>
@@ -33,6 +33,35 @@ const EventHighlights = () => {
 
       <div className="event-container">
         <Slider {...settings}>
+
+          <EventCard
+            className="EventCard6"
+            icon={<Icon icon="mdi:cricket" width="24" height="24" />}
+            heading="1st Interanational Hammer Ball "
+            msg="We successfully covered the 1st International Hammer Ball Competition in Gorakhpur, India.
+Live broadcasting the event while capturing exciting moments through photography.
+Preserving the energy and spirit of this historic competition."
+            photo="../public/images/EventPhotos/span6.jpg"
+          />
+
+          <EventCard
+            className="EventCard4"
+            icon={<Icon className="dance" icon="jam:backward" />}
+            heading="Pabson Dance Competition"
+            msg="We successfully managed media coverage for the Pabson Dance Competition.Highlighting performances, excitement, and memorable moments.Preserving the celebration of creativity and passion in dance."
+            photo="../public/images/EventPhotos/span4.png"
+          />
+
+             <EventCard
+            className="EventCard5"
+            icon={<Icon icon="mdi:cricket" width="24" height="24" />}
+            heading="Tilottama Cricket League"
+            msg="Our team successfully covered the Tilottama Cricket League.
+Live streaming the entire tournament while documenting the journey through photos.
+Showcasing every boundary, wicket, and celebration.
+"
+            photo="../public/images/EventPhotos/span5.jpg"
+          />
           <EventCard
             className="EventCard1"
             icon={<Icon className="mic" icon="solar:podcast-bold" />}
@@ -57,13 +86,11 @@ const EventHighlights = () => {
             photo="../public/images/EventPhotos/span3.png"
           />
 
-          <EventCard
-            className="EventCard4"
-            icon={<Icon className="dance" icon="jam:backward" />}
-            heading="Pabson Dance Competition"
-            msg="We successfully managed media coverage for the Pabson Dance Competition.Highlighting performances, excitement, and memorable moments.Preserving the celebration of creativity and passion in dance."
-            photo="../public/images/EventPhotos/span4.png"
-          />
+          
+
+       
+
+          
         </Slider>
       </div>
     </div>

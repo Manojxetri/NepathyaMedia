@@ -35,15 +35,11 @@ const Podcast = () => {
           <div className="row justify-content-center mb-6">
             <div className="col-lg-12 text-center">
               <p className="podcast-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Laboriosam, dolorem, deserunt quibusdam voluptates quas optio,
-                repellat hic eaque sed eveniet molestias veritatis! Tempore
-                accusamus quasi sequi delectus recusandae a porro.
+               Our podcast is a platform where ideas, experiences, and stories come to life. Through meaningful conversations, the Nepathya Media Team shares knowledge, inspiration, and voices from our community.
               </p>
             </div>
           </div>
 
-          {/* Videos using map */}
           <div className="row  justify-content-center">
             {podcastVideos.map((video) => (
               <div className="col-md-4 " key={video.id}>

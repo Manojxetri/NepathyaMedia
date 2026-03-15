@@ -12,10 +12,7 @@ const ContactUs = () => {
         </div>
         <div className="heading-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Laboriosam, dolorem, deserunt quibusdam voluptates quas optio,
-            repellat hic eaque sed eveniet molestias veritatis! Tempore
-            accusamus quasi sequi delectus recusandae a porro.
+           Let’s connect and create something amazing together. Reach out to the Nepathya Media Team anytime. ✨
           </p>
         </div>
         <div className="contact-form">

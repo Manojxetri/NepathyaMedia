@@ -87,7 +87,7 @@ const Teamdata = [
   {
     name: "Manoj Khanal",
     role: "Frontend Developer & Shorts Video",
-    img: "/TeamPhotos/manoj.jpeg",
+    img: "/TeamPhotos/manoj.jpg",
     msg: "I am Manoj Khanal, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I specialize in creating engaging and user-friendly web experiences, along with editing dynamic and visually compelling short videos that effectively communicate ideas and capture audience attention.",
   },
   {
