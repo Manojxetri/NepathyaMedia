@@ -22,7 +22,7 @@ const NextArrow = ({ onClick }) => (
 const Team = () => {
   const settings = {
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: "60px",          // reduced for better mobile feel
     slidesToShow: 3,
     infinite: true,
     speed: 500,
@@ -30,24 +30,37 @@ const Team = () => {
     arrows: true,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-responsive: [
-  {
-    breakpoint: 1024,
-    settings: {
-      slidesToShow: 2,
-      centerMode: false,
-      dots: false,
-    },
-  },
-  {
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 1,
-      arrows: false,
-      dots: true,   // ✅ SHOW DOTS ON MOBILE
-    },
-  },
-],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+          centerPadding: "40px",
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,        // ← disable center mode on mobile (prevents overflow)
+          centerPadding: "0px",
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          centerPadding: "0px",
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -56,10 +69,10 @@ responsive: [
         <h4>Faces Behind The Lens</h4>
         <div className="team-line"></div>
         <div className="TeamMembers">
-        <h1>Our Team Members</h1>
-        <div className="members">
+          <h1>Our Team Members</h1>
+          <div className="members">
             <h1>Our Team Members</h1>
-        </div>
+          </div>
         </div>
       </div>
 
@@ -68,7 +81,7 @@ responsive: [
           {Teamdata.map((item, index) => (
             <div className="slide-item" key={index}>
               <div className="team-card">
-                <img src={item.img} alt={item.name} />
+                <img src={item.img} alt={item.name} className="team-avatar" />
                 <h3>{item.name}</h3>
                 <div className="role">
                   <h5>{item.role}</h5>
@@ -82,6 +95,8 @@ responsive: [
     </div>
   );
 };
+
+// Teamdata remains the same...
 
 const Teamdata = [
   {
@@ -123,3 +138,5 @@ const Teamdata = [
 ];
 
 export default Team;
+
+// export default Team;

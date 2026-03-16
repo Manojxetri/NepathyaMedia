@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .eventText {
   text-align: center;
   margin-top: 60px;
@@ -25,51 +24,54 @@
   border-radius: 4px;
 }
 
-
 .event-container {
-  width: 90%;
-  margin: auto;
-  padding-bottom: 60px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px 60px;
+  overflow: hidden;                /* ← prevents horizontal scroll */
 }
 
-
-.slick-slide {
-  padding: 0 12px;
-}
-
-.slick-list {
-  margin: 0 -12px;
+/* Slick fixes – very important for mobile */
+.slick-slider,
+.slick-list,
+.slick-track {
+  width: 100% !important;
+  overflow: hidden;
 }
 
 .slick-track {
   display: flex !important;
-}
-
-.slick-slide > div {
-  height: 100%;
-}
-
-
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #aaa;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #3652a4;
+  align-items: stretch !important; /* helps cards same height */
 }
 
 .slick-slide {
-  padding:  12px;
-  height: auto;
+  padding: 0 10px;
+  height: auto !important;
 }
 
 .slick-slide > div {
   height: 100%;
   display: flex;
+  align-items: stretch;
 }
 
+.slick-dots {
+  bottom: -40px;
+}
 
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #aaa;
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3652a4;
+  opacity: 1;
+}
+
+/* Responsive typography */
 @media (max-width: 1024px) {
   .eventText {
     font-size: 28px;
@@ -79,6 +81,7 @@
 @media (max-width: 768px) {
   .eventText {
     font-size: 24px;
+    margin-top: 40px;
   }
 
   .eventLine {
@@ -86,16 +89,20 @@
   }
 
   .event-container {
-    width: 95%;
+    padding: 0 10px 50px;
   }
 }
 
 @media (max-width: 480px) {
   .eventText {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .eventLine {
     width: 160px;
   }
-} 
+
+  .slick-slide {
+    padding: 0 6px;
+  }
+}
