@@ -6,7 +6,7 @@ const Video = () => {
   return (
         <div className='video-main'>
         {/* <div className="overlay"></div> */}
-        <video src={"../public/images/NCMTALKS.MOV"} autoPlay loop muted />
+        <video src={"/images/NCMTALKS.MOV"} autoPlay loop muted />
         <div className="content">
             {/* <h1>Take a Virtual Tour Of Our Media Room</h1> */}
             {/* <p>To my site.</p> */}
