@@ -138,5 +138,4 @@ const Teamdata = [
 ];
 
 export default Team;
-
 // export default Team;

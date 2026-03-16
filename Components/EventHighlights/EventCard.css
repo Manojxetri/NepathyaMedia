@@ -1,70 +1,95 @@
+
+
 .eventstyle {
-  border: 1px solid #ddd;          /* lighter border */
+  margin-top: 10px;
+  border: 1px solid black;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* softer shadow */
+  box-shadow: 7px 5px 0px -1px;
   transition: transform 0.25s ease;
   background: #ffffff;
-  padding: 20px;
-  height: 100%;                    /* full height inside slide */
+  padding: 22px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .eventstyle:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
+
+
 
 .iconstyle {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f0f4ff;
-  border-radius: 12px;
+  width: 43px;
+  height: 43px;
+  /* margin-bottom: 20px; */
 }
 
+
+
 .textstyle {
-  margin: 0 0 12px 0;
+  margin-top: 5px;
   color: #3652A1;
   font-size: 22px;
   font-weight: 600;
-  line-height: 1.3;
 }
 
 .loremstyle {
-  margin: 0 0 16px 0;
+  margin-top: 15px;
   font-size: 15px;
   line-height: 1.6;
-  color: #444;
-  flex-grow: 1;                   /* pushes image down */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  color: #333;
 }
+
 
 .event-image {
   width: 100%;
-  height: 180px;
+  height: 200px;
   object-fit: cover;
   border-radius: 12px;
-  margin-top: auto;               /* sticks to bottom */
+  margin-top: 20px;
 }
 
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .eventstyle {
-    padding: 18px;
-  }
+.eventstyle {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: 7px 5px 0px -1px;
+  transition: transform 0.25s ease;
+  background: #ffffff;
+  padding: 22px;
+  width: 100%;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
+
+@media (max-width: 1024px) {
+  .eventstyle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .textstyle {
     font-size: 20px;
   }
 
-  .loremstyle {
-    font-size: 14px;
+  .event-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textstyle {
+    font-size: 18px;
   }
 
   .event-image {
@@ -72,20 +97,30 @@
   }
 }
 
-@media (max-width: 480px) {
-  .eventstyle {
-    padding: 16px;
+@media (max-width: 768px) {
+
+  .event-container{
+    width: 92%;
   }
 
-  .textstyle {
-    font-size: 18px;
+  .eventstyle{
+    padding:18px;
   }
 
-  .loremstyle {
-    font-size: 13.5px;
+  .loremstyle{
+    font-size:14px;
   }
 
-  .event-image {
-    height: 140px;
+}
+
+@media (max-width:480px){
+
+  .eventstyle{
+    padding:16px;
   }
+
+  .event-image{
+    height:150px;
+  }
+
 }
