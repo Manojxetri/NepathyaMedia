@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className="line"></div>
       <div className="aboutus-description-container">
         <div className="image">
-          <img src="../public/images/icons2.png" alt="" />
+          <img src="/images/icons2.png" alt="" />
         </div>
         <div className="card-right-container">
           <div className="card1">

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="home-img">
-        <img src="../public/images/Rectangle 99.png" alt="home background" />
+        <img src="/images/Rectangle 99.png" alt="home background" />
       </div>
       <div className="home-content">
         <h4>A Creative Team That Bring Stories To Life</h4>
@@ -23,9 +23,10 @@ const Home = () => {
         </div>
       </div>
       <div className="home-image">
-        <HomeImage src="../public/images/HomeImage/laptop.jpeg"  alt="image 1" />
-        <HomeImage src="../public/images/HomeImage/setup.jpeg"  alt="image 1" />
-        <HomeImage src="../public/images/HomeImage/pc.jpeg"  alt="image 1" />
+      <HomeImage src="/images/homeImage/laptop.jpeg" alt="image 1" />
+<HomeImage src="/images/homeImage/setup.jpeg" alt="image 2" />
+<HomeImage src="/images/homeImage/pc.jpeg" alt="image 3" />
+{/* <HomeImage src="/images/homeImage/studio.png" alt="image 3" /> */}
        
       </div>
     </div>

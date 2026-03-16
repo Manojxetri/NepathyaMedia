@@ -53,6 +53,23 @@
   margin-top: 20px;
 }
 
+.eventstyle {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 16px;
+  box-shadow: 7px 5px 0px -1px;
+  transition: transform 0.25s ease;
+  background: #ffffff;
+  padding: 22px;
+  width: 100%;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 
 @media (max-width: 1024px) {
   .eventstyle {
@@ -78,4 +95,32 @@
   .event-image {
     height: 160px;
   }
+}
+
+@media (max-width: 768px) {
+
+  .event-container{
+    width: 92%;
+  }
+
+  .eventstyle{
+    padding:18px;
+  }
+
+  .loremstyle{
+    font-size:14px;
+  }
+
+}
+
+@media (max-width:480px){
+
+  .eventstyle{
+    padding:16px;
+  }
+
+  .event-image{
+    height:150px;
+  }
+
 }

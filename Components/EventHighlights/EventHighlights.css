@@ -59,6 +59,16 @@
   color: #3652a4;
 }
 
+.slick-slide {
+  padding:  12px;
+  height: auto;
+}
+
+.slick-slide > div {
+  height: 100%;
+  display: flex;
+}
+
 
 @media (max-width: 1024px) {
   .eventText {

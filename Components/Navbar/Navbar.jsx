@@ -11,7 +11,7 @@ const Navbar = () => {
     
       <div className="logo">
         <img
-          src="../public/images/Nepathya Media Team logo.png"
+          src="/images/Nepathya Media Team logo.png"
           alt="Media Logo"
         />
       </div>

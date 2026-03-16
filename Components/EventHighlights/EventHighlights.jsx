@@ -41,7 +41,7 @@ const EventHighlights = () => {
             msg="We successfully covered the 1st International Hammer Ball Competition in Gorakhpur, India.
 Live broadcasting the event while capturing exciting moments through photography.
 Preserving the energy and spirit of this historic competition."
-            photo="../public/images/EventPhotos/span6.jpg"
+            photo="/images/EventPhotos/span6.jpg"
           />
 
           <EventCard
@@ -49,7 +49,7 @@ Preserving the energy and spirit of this historic competition."
             icon={<Icon className="dance" icon="jam:backward" />}
             heading="Pabson Dance Competition"
             msg="We successfully managed media coverage for the Pabson Dance Competition.Highlighting performances, excitement, and memorable moments.Preserving the celebration of creativity and passion in dance."
-            photo="../public/images/EventPhotos/span4.png"
+            photo="/images/EventPhotos/span4.png"
           />
 
              <EventCard
@@ -60,14 +60,14 @@ Preserving the energy and spirit of this historic competition."
 Live streaming the entire tournament while documenting the journey through photos.
 Showcasing every boundary, wicket, and celebration.
 "
-            photo="../public/images/EventPhotos/span5.jpg"
+            photo="/images/EventPhotos/span5.jpg"
           />
           <EventCard
             className="EventCard1"
             icon={<Icon className="mic" icon="solar:podcast-bold" />}
             heading="Our Podcast"
             msg="An engaging podcast with CTO & Founder Saroj Dahal. Exploring innovation, startups, and technology leadership. A conversation filled with inspiration and practical knowledge."
-            photo="../public/images/EventPhotos/span.png"
+            photo="/images/EventPhotos/span.png"
           />
 
           <EventCard
@@ -75,7 +75,7 @@ Showcasing every boundary, wicket, and celebration.
             icon={<Icon className="hackathon" icon="cib:hackster" />}
             heading="Nepathon by Fusion Stack"
             msg="Nepathya Media proudly supported Nepathon organized by Fusion Stack. We contributed through media coverage and creative promotion. The event encouraged innovation and student collaboration."
-            photo="../public/images/EventPhotos/span2.png"
+            photo="/images/EventPhotos/span2.png"
           />
 
           <EventCard
@@ -83,7 +83,7 @@ Showcasing every boundary, wicket, and celebration.
             icon={<Icon className="calendar" icon="jam:calendar" />}
             heading="Nepathya Annual Function"
             msg="Nepathya Media captured the highlights of the Nepathya Annual Function.Showcasing performances, awards, and memorable moments of the event. Celebrating creativity, talent, and community in one grand program."
-            photo="../public/images/EventPhotos/span3.png"
+            photo="/images/EventPhotos/span3.png"
           />
 
           
