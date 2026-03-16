@@ -91,6 +91,15 @@
 }
 
 
+.card-container{
+  max-width:100%;
+  overflow:hidden;
+}
+
+.card{
+  width:100%;
+}
+
 
 .team-card img {
   width: 90px;

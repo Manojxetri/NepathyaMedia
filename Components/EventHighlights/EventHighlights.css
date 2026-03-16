@@ -69,6 +69,18 @@
   display: flex;
 }
 
+.event-container{
+  overflow:hidden;
+}
+
+/* .slick-slider{
+  overflow:hidden;
+} */
+
+/* .slick-list{
+  overflow:hidden;
+} */
+
 
 @media (max-width: 1024px) {
   .eventText {
