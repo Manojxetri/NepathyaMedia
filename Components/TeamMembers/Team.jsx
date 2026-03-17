@@ -20,122 +20,128 @@ const NextArrow = ({ onClick }) => (
 );
 
 const Team = () => {
-  const settings = {
-    centerMode: true,
-    centerPadding: "60px",          // reduced for better mobile feel
-    slidesToShow: 3,
-    infinite: true,
-    speed: 500,
-    dots: false,
-    arrows: true,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          centerMode: true,
-          centerPadding: "40px",
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,        // ← disable center mode on mobile (prevents overflow)
-          centerPadding: "0px",
-          arrows: false,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-          centerPadding: "0px",
-          arrows: false,
-          dots: true,
-        },
-      },
-    ],
-  };
+
+const settings = {
+  centerMode: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
+  infinite: true,
+  speed: 500,
+  dots: false,
+  arrows: true,
+  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrow />,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        centerMode: true,
+        centerPadding: "40px"
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        centerPadding: "0px",
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
+};
 
   return (
     <div className="TeamCard">
+
       <div className="team-headings">
+
         <h4>Faces Behind The Lens</h4>
+
         <div className="team-line"></div>
+
         <div className="TeamMembers">
           <h1>Our Team Members</h1>
+
           <div className="members">
             <h1>Our Team Members</h1>
           </div>
         </div>
+
       </div>
 
       <div className="team-wrapper">
+
         <Slider {...settings}>
+
           {Teamdata.map((item, index) => (
             <div className="slide-item" key={index}>
               <div className="team-card">
-                <img src={item.img} alt={item.name} className="team-avatar" />
+
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="team-avatar"
+                />
+
                 <h3>{item.name}</h3>
+
                 <div className="role">
                   <h5>{item.role}</h5>
                 </div>
+
                 <p>{item.msg}</p>
+
               </div>
             </div>
           ))}
+
         </Slider>
+
       </div>
+
     </div>
   );
 };
 
-// Teamdata remains the same...
-
 const Teamdata = [
   {
     name: "Manoj Khanal",
-    role: "Frontend Developer & Shorts Video",
+    role: "Frontend Developer & Shorts Video Editor",
     img: "/TeamPhotos/manoj.jpg",
-    msg: "I am Manoj Khanal, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I specialize in creating engaging and user-friendly web experiences, along with editing dynamic and visually compelling short videos that effectively communicate ideas and capture audience attention.",
+    msg: "I am Manoj Khanal, a passionate Frontend Developer and creative Shorts Video Editor at Nepathya Media Team. I focus on building responsive and visually engaging web interfaces that provide smooth user experiences. Alongside development, I enjoy crafting short-form video content that captures attention and communicates ideas effectively. My goal is to combine creativity and technology to tell powerful visual stories."
   },
   {
     name: "Bardan Karki",
-    role: "Frontend Dev, Shorts Video Editor & Photographer",
+    role: "Frontend Developer, Photographer & Video Editor",
     img: "/TeamPhotos/bardan.jpeg",
-    msg: "I am Bardan Karki, a Frontend Developer, Shorts Editor, and Videographer at Nepathya Media Team. I specialize in creating engaging and user-friendly web experiences, editing dynamic short videos, and capturing impactful visuals that bring stories to life and connect with audiences.",
+    msg: "I am Bardan Karki, working as a Frontend Developer and Photographer at Nepathya Media Team. I enjoy designing interactive websites while also capturing meaningful moments through photography and videography. My work focuses on blending creativity with technology to produce visually appealing digital experiences. I always aim to create content that connects with audiences and tells a story."
   },
   {
     name: "Rosis Sharma",
-    role: "Videography, Video Editor & Frontend Dev",
+    role: "Videographer & Video Editor",
     img: "/TeamPhotos/rosis.jpeg",
-    msg:"I am Rosis Sharma, a creative professional specializing in video editing and videography. I focus on producing visually compelling content that transforms ideas into engaging visuals, communicates clearly, and leaves a lasting impact on audiences.",
+    msg: "I am Rosis Sharma, a videographer and video editor passionate about visual storytelling. I specialize in filming and editing engaging videos that transform ideas into powerful visual narratives. From capturing events to producing creative content, I focus on delivering high-quality visuals that leave a lasting impact. My goal is to make every frame meaningful and memorable."
   },
   {
     name: "Dinesh Tandan",
     role: "Video Editor & Graphic Designer",
     img: "/TeamPhotos/dinesh.jpeg",
-    msg: "I specialize in creating visually compelling content through professional video editing and creative graphic design. My work focuses on transforming ideas into engaging visuals that communicate clearly and leave a lasting impact..",
+    msg: "I am Dinesh Tandan, a creative Video Editor and Graphic Designer at Nepathya Media Team. I specialize in transforming ideas into attractive visual content through editing, motion graphics, and design. My work focuses on creating impactful visuals that communicate messages clearly and effectively. I enjoy experimenting with creative styles to bring fresh and engaging designs."
   },
   {
     name: "Aryan Shrestha",
     role: "Full Stack Designer",
     img: "/TeamPhotos/aryan.jpeg",
-    msg: "I am a Full Stack Designer and Visual Creator at Nepathya Media Team, passionate about crafting engaging visuals that tell a story. From designing creative digital experiences to capturing moments, I bring ideas to life with creativity and precision.",
+    msg: "I am Aryan Shrestha, a Full Stack Designer passionate about creating meaningful digital experiences. I work on both design and development to craft visually appealing and functional projects. From UI design to interactive web experiences, I enjoy bringing creative ideas to life. My goal is to design experiences that are both beautiful and user-friendly."
   },
   {
     name: "Bebas Pandey",
     role: "Manager",
     img: "/TeamPhotos/bebas.jpeg",
-    msg: "I am Bebas Pandey, the Manager at Nepathya Media Team. I lead operations, coordinate projects, and ensure that every initiative is executed smoothly while supporting the team to achieve excellence.",
-  },
+    msg: "I am Bebas Pandey, the Manager of Nepathya Media Team. My role involves coordinating projects, managing team operations, and ensuring smooth execution of our media initiatives. I focus on supporting the team, encouraging creativity, and maintaining a strong collaborative environment. Together we work to deliver impactful media projects."
+  }
 ];
-
 export default Team;
-// export default Team;

@@ -5,110 +5,91 @@ import { Icon } from "@iconify/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const EventHighlights = () => {
- const settings = {
+
+const settings = {
   dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
-  arrows: false,               // ← hide arrows on all sizes (cleaner on mobile)
+  arrows: false,
   autoplay: false,
   pauseOnHover: true,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
+        slidesToShow: 2
+      }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,     // ← important: disable centerMode on mobile
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+        slidesToShow: 1
+      }
+    }
+  ]
 };
+
   return (
-    <div>
+    <div className="event-section">
+
       <h1 className="eventText">
         Our <span className="eventColor">Event Highlights</span>
       </h1>
+
       <div className="eventLine"></div>
 
       <div className="event-container">
         <Slider {...settings}>
 
           <EventCard
-            className="EventCard6"
-            icon={<Icon icon="mdi:cricket" width="24" height="24" />}
-            heading="1st Interanational Hammer Ball "
-            msg="We successfully covered the 1st International Hammer Ball Competition in Gorakhpur, India.
-Live broadcasting the event while capturing exciting moments through photography.
-Preserving the energy and spirit of this historic competition."
+            icon={<Icon icon="mdi:cricket" width="24" />}
+            heading="1st International Hammer Ball"
+            msg="We successfully covered the 1st International Hammer Ball Competition in Gorakhpur, India. Live broadcasting the event while capturing exciting moments through photography."
             photo="/images/EventPhotos/span6.jpg"
           />
 
           <EventCard
-            className="EventCard4"
-            icon={<Icon className="dance" icon="jam:backward" />}
+            icon={<Icon icon="jam:backward" />}
             heading="Pabson Dance Competition"
-            msg="We successfully managed media coverage for the Pabson Dance Competition.Highlighting performances, excitement, and memorable moments.Preserving the celebration of creativity and passion in dance."
+            msg="We successfully managed media coverage for the Pabson Dance Competition highlighting performances, excitement and memorable moments."
             photo="/images/EventPhotos/span4.png"
           />
 
-             <EventCard
-            className="EventCard5"
-            icon={<Icon icon="mdi:cricket" width="24" height="24" />}
+          <EventCard
+            icon={<Icon icon="mdi:cricket" width="24" />}
             heading="Tilottama Cricket League"
-            msg="Our team successfully covered the Tilottama Cricket League.
-Live streaming the entire tournament while documenting the journey through photos.
-Showcasing every boundary, wicket, and celebration.
-"
+            msg="Our team successfully covered the Tilottama Cricket League with full live streaming and event photography."
             photo="/images/EventPhotos/span5.jpg"
           />
+
           <EventCard
-            className="EventCard1"
-            icon={<Icon className="mic" icon="solar:podcast-bold" />}
+            icon={<Icon icon="solar:podcast-bold" />}
             heading="Our Podcast"
-            msg="An engaging podcast with CTO & Founder Saroj Dahal. Exploring innovation, startups, and technology leadership. A conversation filled with inspiration and practical knowledge."
+            msg="An engaging podcast with CTO & Founder Saroj Dahal exploring innovation, startups and leadership."
             photo="/images/EventPhotos/span.png"
           />
 
           <EventCard
-            className="EventCard2"
-            icon={<Icon className="hackathon" icon="cib:hackster" />}
+            icon={<Icon icon="cib:hackster" />}
             heading="Nepathon by Fusion Stack"
-            msg="Nepathya Media proudly supported Nepathon organized by Fusion Stack. We contributed through media coverage and creative promotion. The event encouraged innovation and student collaboration."
+            msg="Nepathya Media proudly supported Nepathon organized by Fusion Stack with creative coverage and promotion."
             photo="/images/EventPhotos/span2.png"
           />
 
           <EventCard
-            className="EventCard3"
-            icon={<Icon className="calendar" icon="jam:calendar" />}
+            icon={<Icon icon="jam:calendar" />}
             heading="Nepathya Annual Function"
-            msg="Nepathya Media captured the highlights of the Nepathya Annual Function.Showcasing performances, awards, and memorable moments of the event. Celebrating creativity, talent, and community in one grand program."
+            msg="Nepathya Media captured highlights of the Nepathya Annual Function showcasing performances and awards."
             photo="/images/EventPhotos/span3.png"
           />
 
-          
-
-       
-
-          
         </Slider>
       </div>
+
     </div>
   );
 };

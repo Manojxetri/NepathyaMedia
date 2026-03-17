@@ -1,113 +1,121 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Poppins:wght@300;400;500;600;700&display=swap");
 
-* {
-  box-sizing: border-box;
+*{
+box-sizing:border-box;
 }
 
+/* Section */
 
-.eventText {
-  text-align: center;
-  margin-top: 60px;
-  font-family: "ABeeZee", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
+.event-section{
+overflow:hidden;
 }
 
-.eventColor {
-  color: #3652a4;
+/* Title */
+
+.eventText{
+text-align:center;
+margin-top:60px;
+font-family:"ABeeZee";
+font-size:32px;
+font-weight:500;
 }
 
-.eventLine {
-  width: 280px;
-  height: 4px;
-  background-color: #3652a4;
-  margin: 10px auto 50px auto;
-  border-radius: 4px;
+.eventColor{
+color:#3652a4;
 }
 
-
-.event-container {
-  width: 90%;
-  margin: auto;
-  padding-bottom: 60px;
+.eventLine{
+width:280px;
+height:4px;
+background:#3652a4;
+margin:10px auto 50px;
+border-radius:4px;
 }
 
+/* Container */
 
-.slick-slide {
-  padding: 0 12px;
+.event-container{
+width:90%;
+margin:auto;
+padding-bottom:80px;
 }
 
-.slick-list {
-  margin: 0 -12px;
+/* Slick Fix */
+
+.slick-slider{
+position:relative;
 }
 
-.slick-track {
-  display: flex !important;
+.slick-list{
+overflow:hidden;
 }
 
-.slick-slide > div {
-  height: 100%;
+.slick-track{
+display:flex !important;
 }
 
-
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #aaa;
+.slick-slide{
+padding:0 12px;
 }
 
-.slick-dots li.slick-active button:before {
-  color: #3652a4;
+.slick-slide > div{
+height:100%;
+display:flex;
 }
 
-.slick-slide {
-  padding:  12px;
-  height: auto;
+/* Dots */
+
+.slick-dots{
+bottom:-35px;
 }
 
-.slick-slide > div {
-  height: 100%;
-  display: flex;
+.slick-dots li button:before{
+font-size:10px;
+color:#aaa;
+}
+
+.slick-dots li.slick-active button:before{
+color:#3652a4;
+}
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+.eventText{
+font-size:28px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.eventText{
+font-size:24px;
+}
+
+.eventLine{
+width:200px;
 }
 
 .event-container{
-  overflow:hidden;
+width:94%;
 }
 
-/* .slick-slider{
-  overflow:hidden;
-} */
-
-/* .slick-list{
-  overflow:hidden;
-} */
-
-
-@media (max-width: 1024px) {
-  .eventText {
-    font-size: 28px;
-  }
 }
 
-@media (max-width: 768px) {
-  .eventText {
-    font-size: 24px;
-  }
+/* Small Mobile */
 
-  .eventLine {
-    width: 200px;
-  }
+@media(max-width:480px){
 
-  .event-container {
-    width: 95%;
-  }
+.eventText{
+font-size:20px;
 }
 
-@media (max-width: 480px) {
-  .eventText {
-    font-size: 20px;
-  }
+.eventLine{
+width:160px;
+}
 
-  .eventLine {
-    width: 160px;
-  }
-} 
+}

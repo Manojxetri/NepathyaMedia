@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
 
 /* About Image */
-
+.about-image{
+    margin-top: 190px;
+}
 /* About Heading */
 .about-heading {
     margin-left: 594px;
@@ -55,7 +57,7 @@
         margin-right: auto;
         width: 90%;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 120px;
     }
 
     .about-image img {
@@ -108,7 +110,7 @@
         margin-right: auto;
         width: 95%;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 120px;
     }
 
     .about-image img {

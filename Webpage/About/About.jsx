@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import Future from "../../Components/Future/Future";
 import Footer from "../../Components/Footer/Footer";
+import Video from "../../Components/Video/Video";
 const About = () => {
   return (
     <div className="about">
@@ -40,6 +41,7 @@ const About = () => {
       <Future/>
       <div className="about-footer">
 
+      {/* <Video/> */}
       <Footer className="about-footer"/>
       </div>
       </div>
