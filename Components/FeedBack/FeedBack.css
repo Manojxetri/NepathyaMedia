@@ -126,7 +126,8 @@
 
 /* Slick Dots */
 .slick-dots {
-  bottom: -50px !important;
+  bottom: -30px !important;
+  position: relative;
 }
 
 .slick-dots li button:before {
@@ -147,6 +148,20 @@
   align-items: flex-start;
 }
 
+.feedback-slider {
+  flex: 1;
+  min-width: 0;
+  padding-bottom: 40px;
+}
+
+.slick-slider {
+  position: relative;
+  z-index: 2;
+}
+
+.slick-dots {
+  z-index: 3;
+}
 @media (max-width: 1024px) {
   .feedback-container {
     flex-direction: column;
@@ -233,4 +248,9 @@
   .slick-dots {
     bottom: -40px !important;
   }
+
+  .slick-dots li button {
+  width: 20px;
+  height: 20px;
+}
 }
