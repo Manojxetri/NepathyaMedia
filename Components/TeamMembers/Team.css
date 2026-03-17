@@ -207,3 +207,23 @@ font-size:18px;
 }
 
 }
+
+
+@media (max-width:768px){
+
+.team-wrapper{
+  overflow:hidden;
+}
+
+.team-card{
+  width:100%;
+  max-width:100%;
+  transform:scale(1) !important;
+  opacity:1 !important;
+}
+
+.slick-slide{
+  padding:0 8px;
+}
+
+}

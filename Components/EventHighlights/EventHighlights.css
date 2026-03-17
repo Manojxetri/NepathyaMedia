@@ -119,3 +119,19 @@ width:160px;
 }
 
 }
+
+@media (max-width:768px){
+
+.event-container{
+  width:92%;
+}
+
+.eventstyle{
+  max-width:100%;
+}
+
+.slick-slide{
+  padding:0 6px;
+}
+
+}
