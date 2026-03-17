@@ -19,92 +19,79 @@ const NextArrow = ({ onClick }) => (
   </div>
 );
 
-const Team = () => {
+// ... (imports remain the same)
 
-const settings = {
-  centerMode: true,
-  centerPadding: "60px",
-  slidesToShow: 3,
-  infinite: true,
-  speed: 500,
-  dots: false,
-  arrows: true,
-  prevArrow: <PrevArrow />,
-  nextArrow: <NextArrow />,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        centerMode: true,
-        centerPadding: "40px"
+const Team = () => {
+  const settings = {
+    centerMode: true,
+    centerPadding: "0px", // Changed to 0 to prevent cutting off cards on small screens
+    slidesToShow: 3,
+    infinite: true,
+    speed: 500,
+    dots: false,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          arrows: false,
+          dots: true // dots are better for mobile UX
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        centerMode: false,
-        centerPadding: "0px",
-        arrows: false,
-        dots: true
-      }
-    }
-  ]
-};
+    ]
+  };
 
   return (
     <div className="TeamCard">
-
       <div className="team-headings">
-
         <h4>Faces Behind The Lens</h4>
-
         <div className="team-line"></div>
-
+        
+        {/* Cleaned up the nested h1's here */}
         <div className="TeamMembers">
           <h1>Our Team Members</h1>
-
           <div className="members">
             <h1>Our Team Members</h1>
           </div>
         </div>
-
       </div>
 
       <div className="team-wrapper">
-
         <Slider {...settings}>
-
           {Teamdata.map((item, index) => (
             <div className="slide-item" key={index}>
               <div className="team-card">
-
                 <img
                   src={item.img}
                   alt={item.name}
                   className="team-avatar"
                 />
-
                 <h3>{item.name}</h3>
-
                 <div className="role">
                   <h5>{item.role}</h5>
                 </div>
-
                 <p>{item.msg}</p>
-
               </div>
             </div>
           ))}
-
         </Slider>
-
       </div>
-
     </div>
   );
 };
+
+// ... (Teamdata and export remain the same)
 
 const Teamdata = [
   {

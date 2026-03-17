@@ -1,137 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Poppins:wght@300;400;500;600;700&display=swap");
-
-*{
-box-sizing:border-box;
+/* Section Styles */
+.event-section {
+  overflow: hidden;
+  padding: 40px 0;
 }
 
-/* Section */
-
-.event-section{
-overflow:hidden;
+.eventText {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "ABeeZee", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding: 0 15px;
 }
 
-/* Title */
-
-.eventText{
-text-align:center;
-margin-top:60px;
-font-family:"ABeeZee";
-font-size:32px;
-font-weight:500;
+.eventColor {
+  color: #3652a4;
 }
 
-.eventColor{
-color:#3652a4;
+.eventLine {
+  width: 280px;
+  height: 4px;
+  background: #3652a4;
+  margin: 10px auto 50px;
+  border-radius: 4px;
 }
 
-.eventLine{
-width:280px;
-height:4px;
-background:#3652a4;
-margin:10px auto 50px;
-border-radius:4px;
+/* Container Fixes */
+.event-container {
+  width: 95%; /* Increased width for better mobile utility */
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 80px;
 }
 
-/* Container */
-
-.event-container{
-width:90%;
-margin:auto;
-padding-bottom:80px;
+/* React Slick Specific Overrides - Prevents Overlapping */
+.slick-slider {
+  position: relative;
 }
 
-/* Slick Fix */
-
-.slick-slider{
-position:relative;
+.slick-list {
+  overflow: hidden;
+  margin: 0 -10px; /* Counteracts the padding on slides */
 }
 
-.slick-list{
-overflow:hidden;
+.slick-track {
+  display: flex !important;
+  align-items: stretch; /* Makes all cards in a row equal height */
 }
 
-.slick-track{
-display:flex !important;
+.slick-slide {
+  padding: 0 10px; /* Space between cards */
+  height: inherit !important;
 }
 
-.slick-slide{
-padding:0 12px;
+.slick-slide > div {
+  height: 100%;
+  display: flex;
 }
 
-.slick-slide > div{
-height:100%;
-display:flex;
+/* Dots Styling */
+.slick-dots {
+  bottom: -35px;
 }
 
-/* Dots */
-
-.slick-dots{
-bottom:-35px;
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #aaa;
 }
 
-.slick-dots li button:before{
-font-size:10px;
-color:#aaa;
+.slick-dots li.slick-active button:before {
+  color: #3652a4;
 }
 
-.slick-dots li.slick-active button:before{
-color:#3652a4;
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .eventText {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .eventLine {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .event-container {
+    width: 100%;
+    padding: 0 10px 60px 10px;
+  }
 }
 
-/* Tablet */
+@media (max-width: 480px) {
+  .eventText {
+    font-size: 20px;
+  }
 
-@media(max-width:1024px){
-
-.eventText{
-font-size:28px;
-}
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.eventText{
-font-size:24px;
-}
-
-.eventLine{
-width:200px;
-}
-
-.event-container{
-width:94%;
-}
-
-}
-
-/* Small Mobile */
-
-@media(max-width:480px){
-
-.eventText{
-font-size:20px;
-}
-
-.eventLine{
-width:160px;
-}
-
-}
-
-@media (max-width:768px){
-
-.event-container{
-  width:92%;
-}
-
-.eventstyle{
-  max-width:100%;
-}
-
-.slick-slide{
-  padding:0 6px;
-}
-
+  .eventLine {
+    width: 160px;
+  }
 }

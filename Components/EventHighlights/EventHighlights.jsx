@@ -16,18 +16,19 @@ const settings = {
   slidesToScroll: 1,
   arrows: false,
   autoplay: false,
-  pauseOnHover: true,
+  adaptiveHeight: true, // Add this
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 2,
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 768, // Standard mobile breakpoint
       settings: {
-        slidesToShow: 1
+        slidesToShow: 1,
+        centerMode: false, // Ensure it doesn't try to show partial side cards
       }
     }
   ]
