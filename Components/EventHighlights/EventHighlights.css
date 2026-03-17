@@ -1,9 +1,10 @@
-/* Section Styles */
+/* Section */
 .event-section {
   overflow: hidden;
   padding: 40px 0;
 }
 
+/* Heading */
 .eventText {
   text-align: center;
   margin-top: 60px;
@@ -25,31 +26,32 @@
   border-radius: 4px;
 }
 
-/* Container Fixes */
+/* Container */
 .event-container {
-  width: 95%; /* Increased width for better mobile utility */
+  width: 95%;
   max-width: 1200px;
   margin: auto;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 
-/* React Slick Specific Overrides - Prevents Overlapping */
+/* Slick Fix */
 .slick-slider {
-  position: relative;
+  width: 100%;
 }
 
 .slick-list {
   overflow: hidden;
-  margin: 0 -10px; /* Counteracts the padding on slides */
+  margin: 0 -10px;
 }
 
 .slick-track {
   display: flex !important;
-  align-items: stretch; /* Makes all cards in a row equal height */
+  align-items: stretch;
 }
 
 .slick-slide {
-  padding: 0 10px; /* Space between cards */
+  padding: 0 10px;
   height: inherit !important;
 }
 
@@ -58,7 +60,13 @@
   display: flex;
 }
 
-/* Dots Styling */
+/* Slide Wrapper */
+.slide-wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Dots */
 .slick-dots {
   bottom: -35px;
 }
@@ -72,8 +80,10 @@
   color: #3652a4;
 }
 
-/* Mobile Adjustments */
+/* ================= MOBILE FIX ================= */
+
 @media (max-width: 768px) {
+
   .eventText {
     font-size: 24px;
     margin-top: 40px;
@@ -86,10 +96,32 @@
 
   .event-container {
     width: 100%;
-    padding: 0 10px 60px 10px;
+    padding: 0 10px 60px;
+  }
+
+  /* 🔥 FORCE ONLY ONE CARD */
+  .slick-slide {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .slick-list {
+    margin: 0 !important;
+  }
+
+  .slide-wrap {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  /* Card full width */
+  .eventstyle {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
+/* Small Devices */
 @media (max-width: 480px) {
   .eventText {
     font-size: 20px;
